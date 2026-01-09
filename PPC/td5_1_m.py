@@ -23,7 +23,7 @@ def is_prime(n):
  
 if __name__ == "__main__":
     nb_nombre = 1000000
-    nb_workers = 20
+    nb_workers = 8
     indexes = [random.randint(1000, 1000000) for i in range(nb_nombre)]
     liste = []
     with multiprocessing.Pool(processes = nb_workers) as pool:
